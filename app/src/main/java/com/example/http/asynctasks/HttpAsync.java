@@ -23,11 +23,12 @@ public class HttpAsync extends AsyncTask<Object, Void, Object> {
     protected Object doInBackground(Object... params) {
         Context context = (Context) params[0];
         String requestType = (String) params[1];
-        String requestParam = (String) params[2];
+        Object requestParam = params[2];
 
         switch (requestType){
             case "get": return HttpResponse.getHttpResponse("https://jsonplaceholder.typicode.com/posts");
             case "getparam": return HttpResponse.getParamHttpResponse("https://jsonplaceholder.typicode.com/posts/" + requestParam);
+            case "post": return HttpResponse.postHttpResponse("https://jsonplaceholder.typicode.com/posts", (String[]) requestParam);
         }
 
         return null;

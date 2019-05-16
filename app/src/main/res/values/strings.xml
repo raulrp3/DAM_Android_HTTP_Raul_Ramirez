@@ -3,4 +3,9 @@
     <string name="button_get">Get all posts</string>
     <string name="button_getParam">Get post by id</string>
     <string name="id">ID:</string>
+    <string name="userId">ID User:</string>
+    <string name="title">Title:</string>
+    <string name="body">Body:</string>
+    <string name="button_post">New post</string>
+    <string name="button_save">Save</string>
 </resources>

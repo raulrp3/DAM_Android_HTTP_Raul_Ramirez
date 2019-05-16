@@ -54,9 +54,10 @@ public class HttpResponse {
 
 
         RequestBody formBody = new FormBody.Builder()
-                .add("userId", String.valueOf(requestParam[0]))
-                .add("title", requestParam[1])
-                .add("body", requestParam[2])
+                .add("id", requestParam[0])
+                .add("userId", requestParam[1])
+                .add("title", requestParam[2])
+                .add("body", requestParam[3])
                 .build();
 
         Request request = new Request.Builder()

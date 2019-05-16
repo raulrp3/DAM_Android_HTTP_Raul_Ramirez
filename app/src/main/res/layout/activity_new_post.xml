@@ -6,38 +6,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/button_get"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_get"/>
+    tools:context=".NewPostActivity">
 
     <EditText
-        android:id="@+id/edittext_id"
+        android:id="@+id/edittext_newId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/id"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/edittext_newUserId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/userId"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/edittext_newTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/edittext_newBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/body"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/button_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="@string/id" />
-
-    <Button
-        android:id="@+id/button_getParam"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_getParam"
-        android:layout_marginTop="5dp"/>
-
-    <Button
-        android:id="@+id/button_post"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_post"
-        android:layout_marginTop="5dp"/>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_posts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"/>
+        android:text="@string/button_save"/>
 </LinearLayout>
