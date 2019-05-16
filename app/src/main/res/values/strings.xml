@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HTTP</string>
+    <string name="button_get">Get all posts</string>
+    <string name="button_getParam">Get post by id</string>
+    <string name="id">ID:</string>
+</resources>
